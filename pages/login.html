@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Maharaja Hotel</title>
+    <link rel="icon" href="../logo/favicon-16x16.png" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <!-----------------------------------------logo----------------------------------------------->
+    <header class="header-content header">
+      <div class="logo-content">
+        <img
+          src="../logo/apple-touch-icon.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <div>
+          <span class="address-text">Maharaja</span><br />
+          <span class="address-text address-book">Hotel</span>
+        </div>
+      </div>
+    </header>
+    <!----------------------------Form----------------------------->
+    <div class="bg-img">
+      <div class="content">
+        <header>Login Form</header>
+        <form action="#">
+          <div class="field">
+            <span class="fa fa-user"></span>
+            <input type="text" required placeholder="Name" />
+          </div>
+          <!---------------------------password--------------------->
+          <div class="field space">
+            <span class="fa fa-lock"></span>
+            <input
+              type="password"
+              class="pass-key"
+              required
+              placeholder="Password"
+            />
+            <!-------------------------------------show Password---------------->
+            <span class="show">SHOW</span>
+          </div>
+          <div class="pass">
+            <a href="#">Forget Password?</a>
+          </div>
+          <!-----------------------------------login------------------------>
+          <div class="field">
+            <input type="submit" value="LOGIN" />
+            <a href="../pages/hotel_booking_form.html"></a>
+          </div>
+        </form>
+        <!------------------------------signup-------------------------------->
+        <div class="signup">
+          Don't have account?
+          <a href="../pages/registration.html">Registration Now</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../javascript/login.js"></script>
+  </body>
+</html>

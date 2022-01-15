@@ -1,0 +1,256 @@
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.section1 {
+  height: 100vh;
+  width: 100vw;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.header-logo {
+  padding-top: 8px;
+  width: 13%;
+  height: 13%;
+  filter: invert();
+  padding-right: 30%;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.nav-bar {
+  position: relative;
+  bottom: 95%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.nav-link:hover {
+  border-bottom: 2px solid white;
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.text {
+  color: white;
+  font-style: normal;
+  line-height: 0.2;
+  position: absolute;
+  left: 180px;
+}
+
+.text1 {
+  width: 70%;
+  margin-left: 20%;
+  color: white;
+  font-size: 75px;
+  position: relative;
+  bottom: 70%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* ------------------------------------------------mid------------------------------------------ */
+
+.section-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  padding: 1% 1% 0 1%;
+  object-fit: cover;
+  background-position: center;
+  justify-content: space-between;
+  background-image: url(../photo/background_imagev2.jpg);
+}
+
+.section-item1,
+.section-item2 {
+  height: 100%;
+  width: 45%;
+}
+
+.section-item1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-item1-img {
+  width: 80%;
+  height: 80%;
+}
+
+.section-item-img {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  top: 5%;
+}
+
+.section-item1-text {
+  padding: 10%;
+  height: 100%;
+}
+
+.section-item1-heading {
+  position: relative;
+  top: -200px;
+  color: #777777;
+  font-size: 3em;
+  line-height: 1.2;
+  font-weight: normal;
+  font-family: "Lobster Two", cursive;
+}
+
+.section-item1-desc {
+  position: relative;
+  top: -100px;
+  line-height: 1.6;
+  color: #777777;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* -----------------animation part-----------------------------  */
+
+.section2-animation-container {
+  margin-bottom: 1%;
+}
+
+.section2-container-heading {
+  color: #777777;
+  font-size: 2.5em;
+  margin: 5%;
+}
+
+.slider {
+  height: 70vh;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Setting up the slide track */
+.slide-img {
+  display: flex;
+  height: 100%;
+  width: calc(250px * 50);
+  animation: scroll 100s linear infinite;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 0 7px;
+}
+
+.animation-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.animation-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-self: flex-end;
+  margin: 8%;
+  justify-content: space-between;
+  height: 15%;
+}
+
+.animation-heading {
+  font-size: 1.5em;
+}
+
+.animation-para {
+  font-size: 1.3em;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-450px * 15));
+  }
+}
+
+/* -----------------------footer part------------------------- */
+.section3 {
+  background-color: #777;
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+}
+.footer-item-logo {
+  display: flex;
+  justify-content: space-around;
+  filter: invert();
+}
+
+.footer-items {
+  display: flex;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.links {
+  margin-bottom: 50px;
+}
+
+.contact-info,
+.link,
+.page {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  width: 50%;
+  position: relative;
+  left: 9%;
+}

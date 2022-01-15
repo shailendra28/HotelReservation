@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../AddressBook/homepage.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/hotel_booking_data.css" />
+    <link rel="icon" href="../logo/favicon-16x16.png" />
+    <title>Booking</title>
+  </head>
+  <body>
+    <!-----------------------Header-------------------------------------->
+    <header class="header-content header">
+      <div class="logo-content">
+        <img
+          src="../logo/apple-touch-icon.png"
+          alt="logo"
+          width="50"
+          height="50"
+        />
+        <div>
+          <span class="address-text">Maharaja</span><br />
+          <span class="address-text address-book">Hotel</span>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <!-------------------------------Booking Detail-------------------------->
+      <div class="header-content">
+        <div class="book-detail-text">
+          Your Booking Detail
+          <div class="book-count">10</div>
+        </div>
+        <a href="../pages/hotel_booking_form.html" class="add-button">
+          <img src="../logo/add-24px.svg" alt="" />Add Person</a
+        >
+      </div>
+      <!----------------table---------------------------------------->
+      <div class="table-main">
+        <table id="table-display" class="table"></table>
+      </div>
+    </div>
+    <script src="../javascript/hotel_booking_data.js"></script>
+    <script src="../javascript/utility.js"></script>
+    <script src="../javascript/site_properties.js"></script>
+    <script src="../javascript/hotel_booking_validate.js"></script>
+  </body>
+</html>

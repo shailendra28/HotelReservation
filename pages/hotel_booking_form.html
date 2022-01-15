@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/hotel_booking_form.css" />
+    <link rel="icon" href="../logo/favicon-16x16.png" />
+    <title>Booking form</title>
+    <script defer src="../javascript/hotel_booking_validate.js"></script>
+    <script defer src="../javascript/hotel_booking_form.js"></script>
+     
+  </head>
+  <body>
+    <!--------------------logo------------------------------------------------------------>
+    <header class="header-content header">
+      <div class="logo-content">
+        <img src="../logo/apple-touch-icon.png" alt="logo"  width="50" height="50" />
+        <div>
+          <span class="address-text">Maharaja</span><br >
+          <span class="address-text address-book">Hotel</span>
+        </div>
+      </div>
+    </header>
+     <!--------------------form------------------------------------------------------------>
+    <div class="form-content">
+      <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
+        <div class="form-head-content">
+
+        <div class="form-head">Maharaja Hotel Booking</div>
+        <div class="form-logo-content">
+          <img  src="../logo/apple-touch-icon.png" alt="logo" style="height: 46px;"></a>
+        </div>
+        </div>
+         <!--------------------row-content------------------------------------------------------------>
+        <div class="row-content">
+          <label class="label text" for="name">Full Name</label>
+          <div class="row-input">
+          <input
+            class="input"
+            type="text"
+            id="name"
+            name="Name"
+            autocomplete="off"
+            required
+          >
+        <error-output class="name-error" for="text"></error-output>
+        </div>
+        </div>
+        <div class="row-content">
+          <label class="label text" for="address" >Address</label>
+          <textarea
+          class="input"
+          id="address"
+          name="Address"
+          autocomplete="off"
+          style="height: 50px;"
+          required
+          ></textarea>
+          <error-output class="address-error" for="address"></error-output>
+        </div>
+      
+        <div class="row-content-exp">
+          <div class="oneRow-content">
+              <label class="label text" for="city" ></label>
+              <select class="select-input" name="City" id="city" required>
+                <option value=""selected disabled hidden>Select City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Banaras</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Sawantwadi">Sawantwadi</option>
+                <option value="Benguluru">Benguluru</option>
+                <option value="Bhuvaneshwar">Bhuvaneshwar</option>
+                <option value="Dumka">Dumka</option>
+                <option value="Thane">Thane</option>
+                <option value="Alibaag">Alibaag</option>
+               </select>
+              </div>
+            <div class="oneRow-content">
+              <label class="label text" for="state"></label>
+              <select class="select-input" name="State" id="state" required>
+                <option value="" selected disabled hidden>Select State</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Utter Pradesh">Utter Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Karnataka">Karnataka</option>
+                </select>
+            </div> 
+            <div class="oneRow-content">
+              <label class="label text" for="zip" ></label>
+              <input
+              class="input"
+              type="text"
+              id="zip"
+              name="Zip"
+              autocomplete="off"
+              placeholder="Zip"
+              required
+            />
+            <error-output class="zip-error" for="text"></error-output>
+          </div>
+          </div>
+          <div class="row-content">
+            <label class="label text" for="phone">PhoneNumber</label> 
+            <input
+            class="input"
+            type="text"
+            id="phone"
+            name="Phone"
+            autocomplete="off"
+            required
+          />
+          <error-output class="phone-error" for="phone"></phone-output>
+          </div>
+  <!----------------------------------button------------------------------------------------------->        
+          <div class="submit-reset">
+            <button type="submit" class="button submitButton" id="submitButton">Add</button>
+            <button type="reset" class="resetButton button" id="resetButton">Reset</button>
+          </div>
+          </div>
+        </form>
+    </div>
+  </body>
+</html>
